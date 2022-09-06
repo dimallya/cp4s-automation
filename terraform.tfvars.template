@@ -1,0 +1,34 @@
+########################################################
+# Name: CP4S Terraform Variable File
+# Desc: Initial input variables to support installation of CP4S into the cloud provider of your choice
+########################################################
+
+## gitops-repo_host: The host for the git repository.
+gitops_repo_host="github.com"
+
+## gitops-repo_type: The type of the hosted git repository (github or gitlab).
+gitops_repo_type="github"
+
+## gitops-repo_org: The org/group where the git repository exists/will be provisioned.
+## your gitorg - if left blank the value will default to your username
+gitops_repo_org=""
+
+## gitops-repo_repo: The short name of the repository (i.e. the part after the org/group name)
+gitops_repo_repo="PREFIXcp4s-gitops"
+
+## gitops-cluster-config_banner_text: The text that will appear in the top banner in the cluster
+gitops-cluster-config_banner_text="Software Everywhere Cloud Pak for Security"
+
+## The variable which need to be set to true, if ROKS authentication has to be enabled if platform in IBM Cloud.
+gitops-cp4s_roks_auth="false"
+
+## The provisioned block or file storage class for all the PVCs required by Cloud Pak for Security.
+rwo_storage_class="RWO_STORAGE"
+
+## entitlement_key: The entitlement key used to access the CP4S images in the container registry. Visit https://myibm.ibm.com/products-services/containerlibrary to get the key
+entitlement_key=""
+
+## gitops-cp4s_admin_user: Short name or email-id of the user to be given administrator privileges in the default account. Mandatory value while creating cp4s-threat-management-instance
+gitops-cp4s_admin_user=""
+
+
