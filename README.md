@@ -11,8 +11,7 @@ Steps:
      ```
      git clone https://github.com/dimallya/cp4s-automation
      ```
-2. Navigate into the cp4s-automation folder using your command line.
-   a. This document focuses on installing CP4S in a Red Hat OpenShift existing cluster.
+2. Navigate into the `cp4s-automation` folder using your command line. This document focuses on installing CP4S in a Red Hat OpenShift existing cluster.
 3. Next you will need to set-up your credentials.properties file. This will enable a secure access to your cluster.
 
     ```
