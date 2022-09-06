@@ -97,7 +97,7 @@ Steps:
 	## gitops-cluster-config_banner_text: The text that will appear in the top banner in the cluster
 	gitops-cluster-config_banner_text="Software Everywhere Cloud Pak for Security"
 
-	## entitlement_key: The entitlement key used to access the CP4I images in the container registry. Visit https://myibm.ibm.com/products-services/containerlibrary to get the key
+	## entitlement_key: The entitlement key used to access the CP4S images in the container registry. Visit https://myibm.ibm.com/products-services/containerlibrary to get the key
 	entitlement_key=""
 
 	## gitops-cp4s_admin_user: Short name or email-id of the user to be given administrator privileges in the default account. Mandatory value while creating cp4s-threat-management-instance
@@ -124,7 +124,7 @@ Steps:
       terraform init
       terraform apply --auto-approve
       ………
-      Apply complete! Resources: 78 added, 0 changed, 0 destroyed.
+      Apply complete! Resources: 73 added, 0 changed, 0 destroyed.
 
       ```
 
@@ -139,7 +139,7 @@ Steps:
      terraform init
      terraform apply --auto-approve
      ………
-     Apply complete! Resources: 38 added, 0 changed, 0 destroyed.
+     Apply complete! Resources: 18 added, 0 changed, 0 destroyed.
      ```
 
 26. Once the installation has finished you will see a message from Terraform defining the state of the environment.
