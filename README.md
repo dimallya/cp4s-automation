@@ -151,8 +151,8 @@ Steps:
 29. Check if the payload folder has been created with the correct definitions for GitOps. Navigate to the `payload/2-services/namespace/cp4s` folder and look at the content of the installation YAML files. You should see the Operator CR definitions
 29. Final Step is to Open up Argo CD (OpenShift GitOps) check it is correctly configured, click on the Application menu 3x3 Icon on the header and select **Cluster Argo CD** menu item.
 
-30. Complete the authorization with OpenShift, and, then narrow the filters by selecting the **cp4s namespace**.
+30. Complete the authorization with OpenShift, and, then narrow the filters by selecting the **cp4s**.
 
 31. This will show you the GitOps dashboard of the software you have installed using GitOps techniques
-32. Click on **ibm-cp4s-threatmgmt-instance** tile
+32. Click on **cp4s-ibm-cp4s-threatmgmt-instance** tile
 33. You will see all the microservices that CP4S uses to install with their enablement state
