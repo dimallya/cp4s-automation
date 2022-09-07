@@ -127,6 +127,11 @@ Steps:
       Apply complete! Resources: 73 added, 0 changed, 0 destroyed.
 
       ```
+     **Note:** At this stage, if following error is faced, it may be ignored for now as it is occuring due to changing framework. It would be fixed.
+     ![image](https://user-images.githubusercontent.com/99815425/188866892-c514ede5-43d2-4237-895b-622104cfe95b.png)
+     
+     At the stage when this error occurs, ArgoCD installation and GitOps repostiroy creation and bootstrapping with ArgoCD would be completed.
+
 
 23. This will kick off the automation for setting up the GitOps Operator into your cluster.
 
