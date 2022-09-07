@@ -139,7 +139,7 @@ Steps:
      terraform init
      terraform apply --auto-approve
      ………
-     Apply complete! Resources: 18 added, 0 changed, 0 destroyed.
+     Apply complete! Resources: 44 added, 0 changed, 0 destroyed.
      ```
 
 26. Once the installation has finished you will see a message from Terraform defining the state of the environment.
