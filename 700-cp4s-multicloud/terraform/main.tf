@@ -1,5 +1,5 @@
 module "cp4s-namespace" {
-  source = "github.com/cloud-native-toolkit/terraform-gitops-namespace?ref=v1.12.1"
+  source = "github.com/cloud-native-toolkit/terraform-gitops-namespace?ref=v1.12.2"
 
   argocd_namespace = var.cp4s-namespace_argocd_namespace
   ci = var.cp4s-namespace_ci
@@ -59,4 +59,11 @@ module "gitops-cp4s" {
   roks_auth = var.gitops-cp4s_roks_auth
   server_name = module.gitops_repo.server_name
   storage_class = var.rwo_storage_class
+}
+module "util-clis" {
+  source = "cloud-native-toolkit/clis/util"
+  version = "1.16.9"
+
+  bin_dir = var.util-clis_bin_dir
+  clis = var.util-clis_clis == null ? null : jsondecode(var.util-clis_clis)
 }
